@@ -1,0 +1,528 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Javanotes 5.0 Source Code</title>
+<link type="text/css" rel="stylesheet" href="../javanotes.css">
+</head>
+<body>
+<div class="content">
+<h3 align="center">Introduction to Programming Using Java, Fifth Edition</h3>
+<h2 align="center">Source Code</h2>
+<hr class="break">
+   
+
+<p>
+
+<span class="start"><big>T</big>his page contains links</span> to the source code for
+
+examples appearing in the free, on-line textbook <i><a href="../index.html">Introduction 
+to Programming Using Java,</a></i> Version 5.0.
+You should
+be able to compile these files and use them. Note however that some of these
+examples depend on other source files, such as <span class="sourceref"><a href="TextIO.java">TextIO.java</a></span> and <span class="sourceref"><a href="MosaicFrame.java">MosaicFrame.java</a></span>,
+that are not built into Java. These are classes that I have written. <b>Links to
+all necessary non-standard source code files are provided below.</b> 
+To use examples that depend on my classes,
+you will need to compile the source code for the required classes and place the
+compiled classes in the same directory with the main class file. If you are
+using an integrated development environment such as Eclipse,
+you can simply add any required source code files to your project.</p>
+
+
+<p>Most of the solutions to end-of-chapter exercises are <b>not</b>
+listed on this page. Each end-of-chapter exercise has its own Web page, which
+discusses its solution. The source code of a sample solution of each exercise
+is given in full on the solution page for that exercise. If you want to compile
+the solution, you should be able to cut-and-paste the solution out of a Web
+browser window and into a text editing program. (You can't cut-and-paste from
+the HTML source of the solution page, since it contains extra HTML markup
+commands that the Java compiler won't understand; the HTML markup does
+not appear when the page is displayed in a Web browser.)</p>
+
+
+<p>Note that many of these examples require Java version 5.0 or later. Some of
+them were written for older versions, but will still work with current
+versions. When you compile some of these older programs with current versions
+of Java, you might get warnings about "deprecated" methods. These warnings are
+<b>not</b> errors. When a method is deprecated, it means that it should not be used in
+new code, but it has not yet been removed from the language. It is possible
+that deprecated methods might be removed from the language at some future time,
+but for now you just get a warning about using them.</p>
+
+
+
+<hr class="break">
+<h3 class="subsection_title">
+<a name="source.1">Part 1: Text-oriented Examples</a>
+</h3>
+
+
+<p>Many of the sample programs in the text are based on console-style
+input/output, where the computer and the user type lines of text back and forth
+to each other. Some of these programs use the standard output object,
+<span class="code">System.out</span>, for output. Many of them use my non-standard class,
+<span class="classname">TextIO</span>, for both input and output. For the programs that use <span class="classname">TextIO</span>,
+one of the files <span class="sourceref"><a href="TextIO.java">TextIO.java</a></span> or TextIO.class must
+be available when you compile the program, and TextIO.class must be available
+when you run the program.  There is also a GUI version of TextIO;
+you can find information about it at the end of this section.</p>
+
+
+<p>The programs listed here are stand-alone
+applications, not applets, but I have written applets that simulate many of the
+programs.  These "console applets" appear on Web pages in the on-line version
+of this textbook.  They
+are based on <span class="sourceref"><a href="TextIOApplet.java">TextIOApplet.java</a></span>, which provides
+the same methods as <span class="classname">TextIO</span>, but in an applet instead of in
+a stand-alone application.  It is straightforward to convert a
+TextIO program to a TextIOApplet applet.  See the comments in the
+<span class="sourceref"><a href="TextIOApplet.java">TextIOApplet.java</a></span> file for information about
+how to do it.  One example of this can be found in the file
+<span class="sourceref"><a href="Interest3Console.java">Interest3Console.java</a></span>.</p>
+
+
+<ul>
+   
+<li>
+<span class="sourceref"><a href="Interest.java">Interest.java</a></span>, from <a href="../c2/s2.html">Section&nbsp;2.2</a>, computes the interest on
+   a specific amount of money over a period of one year.</li>
+   
+<li>
+<span class="sourceref"><a href="TimedComputation.java">TimedComputation.java</a></span>, from <a href="../c2/s3.html">Section&nbsp;2.3</a>, demonstrates a few
+   basic built-in subroutines and functions.</li>
+   
+<li>
+<span class="sourceref"><a href="EnumDemo.java">EnumDemo.java</a></span>, from <a href="../c2/s3.html">Section&nbsp;2.3</a>, a <b>very</b> simple
+   first demonstration of enum types.</li>
+   
+<li>
+<span class="sourceref"><a href="PrintDemo.java">PrintDemo.java</a></span>, from <a href="../c2/s4.html">Section&nbsp;2.4</a>, reads an integer 
+   typed in by the user and prints the square of that integer.  This program depends on
+   <span class="sourceref"><a href="TextIO.java">TextIO.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="Interest2.java">Interest2.java</a></span>, from <a href="../c2/s4.html">Section&nbsp;2.4</a>, calculates
+   interest on an investment for one year, based on user input.  <b>This program depends on 
+   <span class="sourceref"><a href="TextIO.java">TextIO.java</a></span>.  The same is true for almost all of the programs in the
+   rest of this list.</b>
+</li>
+   
+<li>
+<span class="sourceref"><a href="CreateProfile.java">CreateProfile.java</a></span>, from <a href="../c2/s4.html">Section&nbsp;2.4</a>, a simple
+   demo of output to a file, using TextIO.</li>
+   
+<li>
+<span class="sourceref"><a href="Interest3.java">Interest3.java</a></span>, from <a href="../c3/s1.html">Section&nbsp;3.1</a>, the first
+   example that uses control statements.</li>
+   
+<li>
+<span class="sourceref"><a href="ThreeN1.java">ThreeN1.java</a></span>, from <a href="../c3/s2.html">Section&nbsp;3.2</a>, outputs a 3N+1 sequence
+   for a given stating value.</li>
+   
+<li>
+<span class="sourceref"><a href="ComputeAverage.java">ComputeAverage.java</a></span>, from <a href="../c3/s3.html">Section&nbsp;3.3</a>, computes the average
+   value of some integers entered by the user.</li>
+   
+<li>
+<span class="sourceref"><a href="CountDivisors.java">CountDivisors.java</a></span>, from <a href="../c3/s4.html">Section&nbsp;3.4</a>, counts the number of
+   divisors of an integer entered by the user.</li>
+   
+<li>
+<span class="sourceref"><a href="ListLetters.java">ListLetters.java</a></span>, from <a href="../c3/s4.html">Section&nbsp;3.4</a>, lists all the distinct
+   letters in a string entered by the user.</li>
+   
+<li>
+<span class="sourceref"><a href="LengthConverter.java">LengthConverter.java</a></span>, from <a href="../c3/s5.html">Section&nbsp;3.5</a>, converts length
+   measurements input by the user into different units of measure.</li>
+   
+<li>
+<span class="sourceref"><a href="ReadNumbersFromFile.java">ReadNumbersFromFile.java</a></span>, from <a href="../c3/s7.html">Section&nbsp;3.7</a>, finds the sum
+   and the average of numbers read from a file.  Demonstrates <span class="code">try..catch</span> statements.</li>
+   
+<li>
+<span class="sourceref"><a href="GuessingGame.java">GuessingGame.java</a></span>, from <a href="../c4/s2.html">Section&nbsp;4.2</a>, lets the user
+   play guessing games where the computer picks a number and the user tries to guess it.
+   A slight variation of this program, which 
+   reports the number of games won by the user, is <span class="sourceref"><a href="GuessingGame2.java">GuessingGame2.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="RowsOfChars.java">RowsOfChars.java</a></span>, from <a href="../c4/s3.html">Section&nbsp;4.3</a>, a rather useless
+   program in which one subroutine calls another.</li>
+   
+<li>
+<span class="sourceref"><a href="ThreeN2.java">ThreeN2.java</a></span>, from <a href="../c4/s4.html">Section&nbsp;4.4</a>, is an improved
+   3N+1 program that uses subroutines and prints its output in neat columns.</li>
+   
+<li>
+<span class="sourceref"><a href="HighLow.java">HighLow.java</a></span>, from <a href="../c5/s4.html">Section&nbsp;5.4</a>, a simple card game.
+   It uses the classes <span class="sourceref"><a href="Card.java">Card.java</a></span> and <span class="sourceref"><a href="Deck.java">Deck.java</a></span>, which are
+   given as examples of object-oriented programming.  Also available, the card-related classes
+   <span class="sourceref"><a href="Hand.java">Hand.java</a></span> and, from <a href="../c5/s5.html#OOP.5.1">Subection&nbsp;5.5.1</a>,
+   <span class="sourceref"><a href="BlackjackHand.java">BlackjackHand.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="BirthdayProblemDemo.java">BirthdayProblemDemo.java</a></span>, from <a href="../c7/s2.html">Section&nbsp;7.2</a>, demonstrates
+   random access to array elements using the "birthday problem" (how many people do you have
+   to choose at random until two are found whose birthdays are on the same day of the year).</li>
+   
+<li>
+<span class="sourceref"><a href="ReverseInputNumbers.java">ReverseInputNumbers.java</a></span>, from <a href="../c7/s3.html">Section&nbsp;7.3</a>, is a 
+   short program that illustrates the use of a partially full array by reading some numbers
+   from the user and then printing them in reverse order.</li>
+   
+<li>
+<span class="sourceref"><a href="ReverseWithDynamicArray.java">ReverseWithDynamicArray.java</a></span>, from <a href="../c7/s3.html">Section&nbsp;7.3</a>, reads
+   numbers from the user then prints them out in reverse order.  It does this using the
+   class <span class="sourceref"><a href="DynamicArrayOfInt.java">DynamicArrayOfInt.java</a></span> as an example of using dynamic arrays.</li>
+
+</ul>
+
+
+
+
+
+<hr class="break">
+<h3 class="subsection_title">
+<a name="source.2">Part 2: Graphical Examples from the Text</a>
+</h3>
+   
+
+<ul>
+   
+   
+<li>
+<span class="sourceref"><a href="GUIDemo.java">GUIDemo.java</a></span> is a simple demonstration of some basic
+   GUI components from the Swing graphical user interface library.  It appears in
+   the text in <a href="../c1/s6.html">Section&nbsp;1.6</a>, but you won't be able to understand
+   it until you learn about GUI programming.</li>
+   
+<li>
+<span class="sourceref"><a href="StaticRects.java">StaticRects.java</a></span> is a rather useless applet that simply
+   draws a static image.  It is the first example of GUI programming, in
+   <a href="../c3/s8.html">Section&nbsp;3.8</a>.</li>
+   
+<li>
+<span class="sourceref"><a href="MovingRects.java">MovingRects.java</a></span>, also from <a href="../c3/s8.html">Section&nbsp;3.8</a>, 
+   draws an animated version of the image in the preceding example.  This
+   applet depends on <span class="sourceref"><a href="SimpleAnimationApplet2.java">SimpleAnimationApplet2.java</a></span>, which is
+   a simple framework for writing animated applets.</li>
+   
+<li>
+<span class="sourceref"><a href="RandomMosaicWalk.java">RandomMosaicWalk.java</a></span>, a standalone
+   program that displays a window full of colored squares with a moving
+   disturbance, from <a href="../c4/s6.html">Section&nbsp;4.6</a>.  This program depends on
+   <span class="sourceref"><a href="MosaicCanvas.java">MosaicCanvas.java</a></span> and <span class="sourceref"><a href="Mosaic.java">Mosaic.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="RandomMosaicWalk2.java">RandomMosaicWalk2.java</a></span> is a version of the previous example, 
+   modified to use a few named constants. From <a href="../c4/s7.html">Section&nbsp;4.7</a>.</li>
+   
+<li>
+<span class="sourceref"><a href="ShapeDraw.java">ShapeDraw.java</a></span>, from <a href="../c5/s5.html">Section&nbsp;5.5</a>, is an applet
+   that lets the user place various shapes on a drawing area; an example of
+   abstract classes, subclasses, and polymorphism.</li>
+   
+<li>
+<span class="sourceref"><a href="HelloWorldGUI1.java">HelloWorldGUI1.java</a></span> and <span class="sourceref"><a href="HelloWorldGUI2.java">HelloWorldGUI2.java</a></span>,
+   from <a href="../c6/s1.html">Section&nbsp;6.1</a>, show the message "Hello World" in a window, the first
+   one by using the built-in <span class="classname">JOptionPane</span> class and the second
+   by building the interface "by hand."  Another variation, <span class="sourceref"><a href="HelloWorldGUI4.java">HelloWorldGUI4.java</a></span>,
+   from <a href="../c6/s4.html">Section&nbsp;6.4</a>, uses anonymous nested classes where <span class="sourceref"><a href="HelloWorldGUI1.java">HelloWorldGUI1.java</a></span>
+   uses named nested classes.</li>
+   
+<li>
+<span class="sourceref"><a href="HelloWorldApplet.java">HelloWorldApplet.java</a></span>, from <a href="../c6/s2.html">Section&nbsp;6.2</a>, defines
+   an applet that displays the message "Hello World" or "Goodbye World".  The message 
+   changes when the user clicks a button.</li>
+   
+<li>
+<span class="sourceref"><a href="HelloWorldPanel.java">HelloWorldPanel.java</a></span>, from <a href="../c6/s2.html">Section&nbsp;6.2</a>, is
+   a panel that displays a message.  The panel is used as the content pane both in the
+   applet <span class="sourceref"><a href="HelloWorldApplet2.java">HelloWorldApplet2.java</a></span> and in the window of the
+   stand-alone application <span class="sourceref"><a href="HelloWorldGUI3.java">HelloWorldGUI3.java</a></span>.  This example
+   illustrates the technique of using the same panel class in both an applet and
+   a stand-alone application, a technique that will be used in many examples in the
+   rest of the book.</li>
+   
+<li>
+<span class="sourceref"><a href="ColorChooserApplet.java">ColorChooserApplet.java</a></span>, used in <a href="../c6/s3.html">Section&nbsp;6.3</a>
+   to demonstrate RGB and HSB colors. This old applet uses the AWT rather than Swing
+   for its user interface.  Since it is not presented as a programming example, it
+   has not been revised.</li>
+   
+<li>
+<span class="sourceref"><a href="RandomStringsApplet.java">RandomStringsApplet.java</a></span>, from <a href="../c6/s3.html">Section&nbsp;6.3</a>,
+   shows 25 copies of the string "Java!" (or some other string specified in an applet
+   param) in random colors and fonts.  The applet uses <span class="sourceref"><a href="RandomStringsPanel.java">RandomStringsPanel.java</a></span>
+   for its content pane, and there is a stand-alone application <span class="sourceref"><a href="RandomStringsApp.java">RandomStringsApp.java</a></span>
+   that uses the same panel class.</li>
+   
+<li>
+<span class="sourceref"><a href="ClickableRandomStringsApp.java">ClickableRandomStringsApp.java</a></span>, from <a href="../c6/s4.html">Section&nbsp;6.4</a>,
+   is similar to <span class="sourceref"><a href="RandomStringsApp.java">RandomStringsApp.java</a></span> except that the window is repainted
+   when the user clicks the window.  This is a first example of using a mouse listener.
+   The applet version is <span class="sourceref"><a href="ClickableRandomStringsApplet.java">ClickableRandomStringsApplet.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="SimpleStamper.java">SimpleStamper.java</a></span>, from <a href="../c6/s4.html">Section&nbsp;6.4</a>,
+   lets the user place rectangles and ovals on a drawing area by clicking with the mouse.
+   The applet version is <span class="sourceref"><a href="SimpleStamperApplet.java">SimpleStamperApplet.java</a></span>.  Both versions
+   use <span class="sourceref"><a href="SimpleStamperPanel.java">SimpleStamperPanel.java</a></span> for their content panes.</li>
+   
+<li>
+<span class="sourceref"><a href="SimpleTrackMouse.java">SimpleTrackMouse.java</a></span>, from <a href="../c6/s4.html">Section&nbsp;6.4</a>,
+   shows information about mouse events.
+   The applet version is <span class="sourceref"><a href="SimpleTrackMouseApplet.java">SimpleTrackMouseApplet.java</a></span>.  Both versions
+   use <span class="sourceref"><a href="SimpleTrackMousePanel.java">SimpleTrackMousePanel.java</a></span> for their content panes.</li>
+   
+<li>
+<span class="sourceref"><a href="SimplePaint.java">SimplePaint.java</a></span>, from <a href="../c6/s4.html">Section&nbsp;6.4</a>,
+   lets the user draw curves in a drawing area and select the drawing color from a
+   palette.  The class <span class="classname">SimplePaint</span> can be used either as
+   as applet or as a stand-alone application.</li>
+   
+<li>
+<span class="sourceref"><a href="RandomArtPanel.java">RandomArtPanel.java</a></span>, from <a href="../c6/s5.html">Section&nbsp;6.5</a>, shows
+   a new random "artwork" every four seconds.  This is an example of using a <span class="classname">Timer</span>.
+   Used in an applet version of the program, <span class="sourceref"><a href="RandomArtApplet.java">RandomArtApplet.java</a></span>, and
+   a stand-alone application version, <span class="sourceref"><a href="RandomArt.java">RandomArt.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="KeyboardAndFocusDemo.java">KeyboardAndFocusDemo.java</a></span>, from <a href="../c6/s5.html">Section&nbsp;6.5</a>, shows
+   how to use keyboard and focus events.  This class can be run either has an applet or
+   as a stand-alone application.</li>
+   
+<li>
+<span class="sourceref"><a href="SubKillerPanel.java">SubKillerPanel.java</a></span>, from <a href="../c6/s5.html">Section&nbsp;6.5</a>, lets the
+   user play a simple game.  Uses a timer as well as keyboard and focus events.  The
+   applet version is <span class="sourceref"><a href="SubKillerApplet.java">SubKillerApplet.java</a></span>, and the stand-alone application
+   version is <span class="sourceref"><a href="SubKiller.java">SubKiller.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="SliderDemo.java">SliderDemo.java</a></span>, a simple demo from <a href="../c6/s6.html">Section&nbsp;6.6</a>, is an applet
+   that shows three <span class="classname">JSlider</span>s.</li>
+   
+<li>
+<span class="sourceref"><a href="TextAreaDemo.java">TextAreaDemo.java</a></span>, from <a href="../c6/s6.html">Section&nbsp;6.6</a>, is an applet
+   that demonstrates a <span class="classname">JTextArea</span> in a <span class="classname">JScrollPane</span>.</li>
+   
+<li>
+<span class="sourceref"><a href="BorderDemo.java">BorderDemo.java</a></span>, from <a href="../c6/s7.html">Section&nbsp;6.7</a>, a very simple applet
+   that demonstrates six types of border.</li>
+   
+<li>
+<span class="sourceref"><a href="SliderAndComboBoxDemo.java">SliderAndComboBoxDemo.java</a></span>, from <a href="../c6/s7.html">Section&nbsp;6.7</a>,
+   shows how to create several components and lay them out in a <span class="classname">GridLayout</span>.
+   Can be used either as an applet or as a stand-alone application.</li>
+   
+<li>
+<span class="sourceref"><a href="SimpleCalc.java">SimpleCalc.java</a></span>, from <a href="../c6/s7.html">Section&nbsp;6.7</a>, lets the
+   user add, subtract, multiply, or divide two numbers input by the user.  A demo
+   of text fields, buttons, and layout with nested subpanels.
+   Can be used either as an applet or as a stand-alone application.</li>
+   
+<li>
+<span class="sourceref"><a href="NullLayoutDemo.java">NullLayoutDemo.java</a></span>, from <a href="../c6/s7.html">Section&nbsp;6.7</a>, shows
+   how to lay out the components in a container for which the layout manager has been
+   set to <span class="code">null</span>. Can be used either as an applet or as a stand-alone application.</li>
+   
+<li>
+<span class="sourceref"><a href="HighLowGUI.java">HighLowGUI.java</a></span>, from <a href="../c6/s7.html">Section&nbsp;6.7</a>, is a GUI version
+   of <span class="sourceref"><a href="HighLow.java">HighLow.java</a></span>, a game where the user sees a playing card and guesses
+   whether the next card will be higher or lower in value. This program also requires
+   <span class="sourceref"><a href="Card.java">Card.java</a></span>, <span class="sourceref"><a href="Hand.java">Hand.java</a></span>, and
+   <span class="sourceref"><a href="Deck.java">Deck.java</a></span>. Can be used as a stand-alone application and also contains
+   a nested class <span class="classname">HighLowGUI.Applet</span>
+   that represents the applet version of the program</li>
+   
+<li>
+<span class="sourceref"><a href="MosaicDrawController.java">MosaicDrawController.java</a></span>, from <a href="../c6/s8.html">Section&nbsp;6.8</a>,
+   demonstrates menus and a color chooser dialog.  This is used in a program where
+   the user colors the squares of a mosaic by clicking-and-dragging the mouse. It uses
+   <span class="sourceref"><a href="MosaicPanel.java">MosaicPanel.java</a></span> to define the mosaic panel itself.
+   <span class="classname">MosaicDrawController</span> is used in the stand-alone application
+   <span class="sourceref"><a href="MosaicDrawFrame.java">MosaicDrawFrame.java</a></span>, in the applet
+   <span class="sourceref"><a href="MosaicDrawApplet.java">MosaicDrawApplet.java</a></span>, and on the applet
+   <span class="sourceref"><a href="MosaicDrawLauncherApplet.java">MosaicDrawLauncherApplet.java</a></span>.  The latter applet appears
+   as a button on a web page; clicking the button opens a <span class="classname">MosaicDrawFrame</span>.</li>
+   
+<li>
+<span class="sourceref"><a href="SimpleDialogDemo.java">SimpleDialogDemo.java</a></span>, from <a href="../c6/s8.html">Section&nbsp;6.8</a>,
+   is an applet that demonstrates <span class="classname">JColorChooser</span> and some
+   dialogs from <span class="classname">JOptionPane</span>.</li>
+   
+<li>
+<span class="sourceref"><a href="RandomStringsWithArray.java">RandomStringsWithArray.java</a></span>, from <a href="../c7/s2.html">Section&nbsp;7.2</a>,
+   shows 25 copies of a message in random colors, sizes, and positions.  This is an
+   improved version of <span class="sourceref"><a href="RandomStringsPanel.java">RandomStringsPanel.java</a></span> that uses an
+   array to keep track of the data, so that the same picture can be redrawn whenever
+   necessary.  (Written only as an applet.)</li>
+   
+<li>
+<span class="sourceref"><a href="SimpleDrawRects.java">SimpleDrawRects.java</a></span>, from <a href="../c7/s3.html">Section&nbsp;7.3</a>, lets
+   the user place colored rectangles in a drawing area.  Illustrates the use of
+   an <span class="classname">ArrayList</span>.  An applet version is
+   <span class="sourceref"><a href="SimpleDrawRectsApplet.java">SimpleDrawRectsApplet.java</a></span>.  This program uses and depends on
+   <span class="sourceref"><a href="RainbowPalette.java">RainbowPalette.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="SimplePaint2.java">SimplePaint2.java</a></span>, from <a href="../c7/s3.html">Section&nbsp;7.3</a>, lets
+   the user draw colored curves and stores the data needed for repainting the
+   drawing surface in a list of type <span class="atype">ArrayList&lt;CurveData&gt;</span>.</li>
+   
+<li>
+<span class="sourceref"><a href="Checkers.java">Checkers.java</a></span>, from <a href="../c7/s5.html">Section&nbsp;7.5</a>, lets two
+   users play a game of checkers against each other.  Illustrates the use of a 
+   two-dimensional array. (This is the longest program in the book so far, at over 750
+   lines!)</li>
+
+</ul>
+
+
+   
+   
+
+<hr class="break">
+<h3 class="subsection_title">
+<a name="source.3">Part 3: End-of-Chapter Applets</a>
+</h3>
+
+
+<p>This section contains the source code for the applets that are used as
+decorations at the end of each chapter. In general, you should not expect to be
+able to understand these applets at the time they occur in the text.   Most of
+these are older applets that will work with Java 1.1 or even Java 1.0.  They
+are not meant as examples of good programming practice for more recent
+versions of Java.</p>
+
+
+<ol>
+   
+<li>
+<span class="sourceref"><a href="Moire.java">Moire.java</a></span>, an animated design, shown at the end
+   of <a href="../c1/s7.html">Section&nbsp;1.7</a>.  You can use applet parameters to
+   control various aspects of this applet's behavior. Also note that you can click
+   on the applet and drag the pattern around by hand. See the source code for
+   details.</li>
+   
+<li>
+<span class="sourceref"><a href="JavaPops.java">JavaPops.java</a></span>, from <a href="../c2/s6.html">Section&nbsp;2.6</a>
+   is a simple animation that shows copies
+   of the string "Java!" in various sizes and colors appearing and disappearing.
+   This is an old applet that depends on an old animation framework
+   named <span class="sourceref"><a href="SimpleAnimationApplet.java">SimpleAnimationApplet.java</a></span>
+</li>
+   
+<li>
+<span class="sourceref"><a href="MovingRects.java">MovingRects.java</a></span> shows a simple animation of rectangles
+   continuously shrinking towards the center of the applet.  This is also
+   a programming example in <a href="../c3/s8.html">Section&nbsp;3.8</a>.  It depends on
+   <span class="sourceref"><a href="SimpleAnimationApplet2.java">SimpleAnimationApplet2.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="RandomBrighten.java">RandomBrighten.java</a></span>, showing a grid of
+   colored squares that get more and more red as a wandering disturbance visits
+   them, from the end of <a href="../c4/s7.html">Section&nbsp;4.7</a>. Depends on
+   <span class="sourceref"><a href="MosaicCanvas.java">MosaicCanvas.java</a></span> 
+</li>
+   
+<li>
+<span class="sourceref"><a href="SymmetricBrighten.java">SymmetricBrighten.java</a></span>, a subclass of the previous example that makes 
+   a symmetric pattern, from the end of <a href="../c5/s7.html">Section&nbsp;5.7</a>.  Depends on
+   <span class="sourceref"><a href="MosaicCanvas.java">MosaicCanvas.java</a></span> and <span class="sourceref"><a href="RandomBrighten.java">RandomBrighten.java</a></span>.</li>
+   
+<li>
+<span class="sourceref"><a href="TrackLines.java">TrackLines.java</a></span>, an applet with lines that
+   track the mouse, from <a href="../c6/s8.html">Section&nbsp;6.8</a>.</li>
+   
+<li>
+<span class="sourceref"><a href="KaleidoAnimate.java">KaleidoAnimate.java</a></span>, from <a href="../c7/s5.html">Section&nbsp;7.5</a>, shows moving
+   kaleidoscopic images. (Requires Java 1.4.)</li>
+
+</ol>
+
+
+
+
+<hr class="break">
+<h3 class="subsection_title">
+<a name="source.4">Part 4: Required Auxiliary Files</a>
+</h3>
+
+
+<p>This section lists some of the extra source files that are required by
+various examples in the previous sections, along with a description of each
+file. The files listed here are those which are general enough to be potentially useful in
+other programming projects.  All of them are also referred to above, along
+with the programming examples that depend on them.</p>
+
+
+<ul>
+   
+   
+<li>
+<span class="sourceref"><a href="TextIO.java">TextIO.java</a></span> defines a class containing some
+   static methods for doing input/output. These methods make it easier to use the
+   standard input and output streams, <span class="code">System.in</span> and <span class="code">System.out</span>.
+   <span class="classname">TextIO</span> also supports other input sources and output destinations,
+   such as files.  Note that this version of <span class="classname">TextIO</span> is new with the fifth
+   edition of this textbook and requires Java 5.0 (or higher).  The
+   <span class="classname">TextIO</span> class defined by this file will be useless on a system that
+   does not implement standard input, and might be inconvenient to use in integrated development environments such
+   as Eclipse in which standard input works poorly. In that case, you might want to use
+   the following file instead.</li>
+   
+   
+<li>
+<span class="sourceref"><a href="TextIO-GUI/TextIO.java">TextIO.java for GUI</a></span> defines an
+   alternative to the preceding file. It defines a version of <span class="classname">TextIO</span> with the same set of
+   input and output routines as the original version. But
+   instead of using standard I/O, this GUI version opens its own window, and the
+   input/output is done in that window.  Please read the comments at the beginning
+   of the file. (For people who have downloaded this book: The file is located in
+   a directory named TextIO-GUI inside the source directory.)</li>
+   
+   
+<li>
+<span class="sourceref"><a href="TextIOApplet.java">TextIOApplet.java</a></span> can be used for writing applets that simulate
+   <span class="classname">TextIO</span> applets.  This makes it possible to write applets that use
+   "console-style" input/output.  Such applets are created as subclasses of <span class="code">TextIOApplet</span>.
+   See the comments in the file for more information about how to convert a TextIO
+   program into a TextIOApplet applet.  An example can be found in the file
+   <span class="sourceref"><a href="Interest3Console.java">Interest3Console.java</a></span>.</li>
+
+   
+<li>
+<span class="sourceref"><a href="SimpleAnimationApplet2.java">SimpleAnimationApplet2.java</a></span>, a
+   class that can be used as a framework for writing animated applets. To use the
+   framework, you have to define a subclass of SimpleAnimationApplet2.
+   <a href="../c3/s8.html">Section&nbsp;3.8</a> has an example.</li> 
+     
+   
+<li>
+<span class="sourceref"><a href="Mosaic.java">Mosaic.java</a></span> contains subroutines for opening and controlling a
+   window that contains a grid of colored rectangles.  It depends on <span class="sourceref"><a href="MosaicCanvas.java">MosaicCanvas.java</a></span>.
+   This is a toolbox for writing simple stand-alone applications that use a "mosaic window".  This
+   is rather old code, but it is used in examples in <a href="../c4/s6.html">Section&nbsp;4.6</a>
+   and <a href="../c4/s7.html">Section&nbsp;4.7</a>.</li>
+   
+   
+<li>
+<span class="sourceref"><a href="MoasicPanel.java">MoasicPanel.java</a></span> is a greatly improved version of <span class="sourceref"><a href="MosaicCanvas.java">MosaicCanvas.java</a></span>
+   that has many options.  This class defines a subclass of JPanel that shows little
+   rectangles arranged in rows and columns.  It is used in the "mosaic draw" example in
+   <a href="../c6/s8.html">Section&nbsp;6.8</a>.</li>
+
+
+</ul>
+
+   
+
+
+</div>
+<hr>
+<div align="right">
+<small><a href="http://math.hws.edu/eck/index.html">David Eck</a>, 2006</small>
+</div>
+</body>
+</html>
